@@ -2,6 +2,7 @@ const mongoose=require("mongoose");
 
 const UserSchema = new mongoose.Schema(
     {
+        playerId:{type:Number},
         name:{type: String, required: true},
         level:{type: Number, required: true},
         score:{type: Number, required: true}

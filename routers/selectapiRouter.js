@@ -19,6 +19,7 @@ router.post(
 router.get("/:playerId", async(req, res)=>{
     try {
         const playerId=parseInt(req.params.playerId)
+        // console.log(playerId, typeof playerId)
         let select=await Select.findOne({playerId:playerId});
         console.log(select)
         return res.status(200).json({select});

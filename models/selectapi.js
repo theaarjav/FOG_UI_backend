@@ -2,6 +2,7 @@ const mongoose=require("mongoose");
 
 const SelSchema = new mongoose.Schema(
     {
+        playerId:{type:Number},
         weapons:{type:Number, required:true},
         kits:{type:Number, required:true},
         vehicles:{type:Number, required:true},

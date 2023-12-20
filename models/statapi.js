@@ -2,6 +2,7 @@ const mongoose=require("mongoose");
 
 const StatSchema = new mongoose.Schema(
     {
+        playerId:{type: Number},
         winPer:{type: String, required: true},
         ScoreperMin:{type: String, required: true},
         killsperMin:{type: String, required: true},
